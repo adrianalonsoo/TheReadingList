@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+}
+
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(33, 68, 95);
+    color: aliceblue;
+}
+
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenedor .formulario {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgb(6, 99, 212);
+    color: #fff;
+    max-height: 130px;
+}
+
+.contenedor .formulario input[type="text"] {
+    border: none;
+    padding: 10px;
+}
+
+.contenedor .formulario input[type="text"]:focus {
+    outline: none;
+    border-bottom: 10px solid rgb(15, 31, 55);
+    
+}
+
+.contenedor .formulario input[type="submit"] {
+    border: none;
+    padding: 12px;
+    background-color: rgb(9, 69, 30);
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.contenedor .formulario input[id="borrarLibros"] {
+    border: none;
+    padding: 12px;
+    background-color: rgb(69, 21, 9);
+    color: #fff;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Reading List</title>
+    <link rel="stylesheet" href="readingList.css">
+</head>
+<body>
+    <h1>The Reading List</h1>
+    <div class="contenedor">
+        
+          <form class="formulario" id="formulario">
+            <div>
+              <label for="title">Title</label>
+              <input type="text" id="title">
+            </div>
+            <div>
+              <label for="author">Author</label>
+              <input type="text" id="author" >
+            </div>
+            <div>
+              <label for="genre">Genre</label>
+              <input type="text" id="genre">
+            </div>
+            <input type="submit" value="Add Book">
+
+            <input type="submit" id="borrarLibros" value="Borrar Libros">
+            
+          </form>
+          
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+      </div>
+
+      <script src="readingList.js"></script>
+    
+</body>
+</html>
